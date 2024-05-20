@@ -1,0 +1,24 @@
+theme = "ayu_dark"
+
+[keys.normal]
+C-q = ":buffer-close"
+C-h = ":buffer-previous"
+C-l = ":buffer-next"
+
+[editor]
+line-number = "relative"
+scroll-lines = 5
+scrolloff = 15
+# idle-timeout = 0
+completion-timeout = 5
+preview-completion-insert = false
+bufferline = "multiple"
+
+[editor.cursor-shape]
+insert = "bar"
+
+[editor.file-picker]
+hidden = true
+
+[editor.lsp]
+display-messages = true
