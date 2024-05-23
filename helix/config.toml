@@ -9,16 +9,23 @@ C-l = ":buffer-next"
 line-number = "relative"
 scroll-lines = 5
 scrolloff = 15
-# idle-timeout = 0
+idle-timeout = 0
 completion-timeout = 5
 preview-completion-insert = false
+completion-trigger-len = 1
 bufferline = "multiple"
+popup-border = "all"
 
 [editor.cursor-shape]
 insert = "bar"
 
 [editor.file-picker]
-hidden = true
+hidden = false
 
 [editor.lsp]
 display-messages = true
+
+[editor.indent-guides]
+render = true
+skip-levels = 1
+character = "╎"
