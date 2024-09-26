@@ -4,6 +4,14 @@ theme = "ayu_dark"
 C-q = ":buffer-close"
 C-h = ":buffer-previous"
 C-l = ":buffer-next"
+V = ["goto_first_nonwhitespace", "extend_to_line_end"]
+D = ["ensure_selections_forward", "extend_to_line_end"]
+x = "extend_line"
+
+[keys.select]
+";" = ["collapse_selection", "normal_mode"]
+x = "extend_line"
+V = "extend_to_line_end"
 
 [editor]
 line-number = "relative"
@@ -31,4 +39,5 @@ skip-levels = 1
 character = "╎"
 
 [editor.statusline]
-primary-selection-length
+right = ["diagnostics", "selections", "position", "position-percentage", "file-encoding"]
+
