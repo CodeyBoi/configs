@@ -1,15 +1,19 @@
 theme = "ayu_dark"
 
 [keys.normal]
-C-q = ":buffer-close"
-C-h = ":buffer-previous"
-C-l = ":buffer-next"
+esc = ["collapse_selection", "keep_primary_selection"]
 V = ["goto_first_nonwhitespace", "extend_to_line_end"]
 D = ["ensure_selections_forward", "extend_to_line_end"]
 x = "extend_line"
 # Disable ´d´ and ´c´ yanking (yank with ´yd´ or ´yc´)
 d = "delete_selection_noyank"
 c = "change_selection_noyank"
+C-q = ":buffer-close"
+C-h = ":buffer-previous"
+C-l = ":buffer-next"
+
+[keys.normal.space]
+l = ":toggle lsp.display-inlay-hints"
 
 [keys.select]
 ";" = ["collapse_selection", "normal_mode"]
@@ -24,7 +28,7 @@ idle-timeout = 0
 completion-timeout = 5
 preview-completion-insert = false
 completion-trigger-len = 1
-bufferline = "multiple"
+bufferline = "always"
 popup-border = "all"
 
 [editor.cursor-shape]
@@ -45,3 +49,5 @@ character = "╎"
 [editor.statusline]
 right = ["diagnostics", "selections", "position", "position-percentage", "file-encoding"]
 
+[editor.soft-wrap]
+enable = true
