@@ -11,6 +11,11 @@ c = "change_selection_noyank"
 C-q = ":buffer-close"
 C-h = ":buffer-previous"
 C-l = ":buffer-next"
+# Disable arrow keys >:)
+up = "no_op"
+down = "no_op"
+left = "no_op"
+right = "no_op"
 
 [keys.normal.space]
 l = ":toggle lsp.display-inlay-hints"
@@ -19,6 +24,21 @@ l = ":toggle lsp.display-inlay-hints"
 ";" = ["collapse_selection", "normal_mode"]
 x = "extend_line"
 V = "extend_to_line_end"
+# Disable ´d´ and ´c´ yanking (yank with ´yd´ or ´yc´)
+d = "delete_selection_noyank"
+c = "change_selection_noyank"
+# Disable arrow keys >:)
+up = "no_op"
+down = "no_op"
+left = "no_op"
+right = "no_op"
+
+[keys.insert]
+# Disable arrow keys >:)
+up = "no_op"
+down = "no_op"
+left = "no_op"
+right = "no_op"
 
 [editor]
 line-number = "relative"
