@@ -7,13 +7,12 @@ inherits = "ayu_dark"
 "keyword.control" = "orange"
 
 "function.builtin" = { fg = "yellow", modifiers = ["italic"] }
-"function.macro" = { fg = "yellow", underline = { style = "line" } }
 
 "constructor" = "pink"
 
 [palette]
 cyan = "#76c2bf"
-green = "#a6b14a"
+green = "#96a13a"
 magenta = "#d2a6ff"
 pink = "#ff5c95"
 red = "#cc3f0c"
