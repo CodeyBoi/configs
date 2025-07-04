@@ -40,6 +40,9 @@ down = "no_op"
 left = "no_op"
 right = "no_op"
 
+# Maps `jk` to exit insert mode
+j = { k = "normal_mode" }
+
 [editor]
 line-number = "relative"
 scroll-lines = 5
@@ -56,7 +59,7 @@ insert = "bar"
 select = "underline"
 
 [editor.file-picker]
-hidden = false
+hidden = true
 
 [editor.lsp]
 display-messages = true
