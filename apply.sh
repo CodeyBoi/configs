@@ -1,5 +1,8 @@
-CONFIG_DIR=~/.config/helix
-cp helix/config.toml $CONFIG_DIR
-cp helix/languages.toml $CONFIG_DIR
-mkdir -p $CONFIG_DIR/themes
-cp helix/themes/* $CONFIG_DIR/themes
+#!/usr/bin/env bash
+
+SCRIPT_DIR=$(realpath $(dirname "$0"))
+CONFIG_DIR=~/.config
+
+cp -r $SCRIPT_DIR/helix $CONFIG_DIR
+
+echo "Configurations applied!"
