@@ -43,6 +43,9 @@ right = "no_op"
 # Maps `jk` to exit insert mode
 j = { k = "normal_mode" }
 
+# Unmap esc from exiting insert mode >:) (use the above binding)
+esc = "no_op"
+
 [editor]
 line-number = "relative"
 scroll-lines = 5

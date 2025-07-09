@@ -1,0 +1,28 @@
+# Unignore dotfiles
+!.github/
+!.gitignore
+!.ignore
+!.gitattributes
+
+# Binary files
+**/*.bin
+
+# Pictures
+**/*.png
+**/*.pdn
+**/*.jpg
+**/*.jpeg
+
+# Audio
+**/*.wav
+**/*.mp3
+
+# Documents
+**/*.pdf
+**/*.docx
+
+# Language executables
+**/*.pyc
+**/*.pyxel
+**/*.ch8
+**/*.jar
